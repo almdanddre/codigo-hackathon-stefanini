@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+<script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous">
+  
+$('.botao').click(function(){
+       var nome = $(this).attr('name-students');
+       var bairro = $(this).attr('district');
+       var cidade = $(this).attr('city');
+       var rua = $(this).attr('street');
+       var cpf = $(this).attr('cpf');
+       var sexo = $(this).attr('sexo');
+   
+       console.log ("Botão: "+ name-students + "  Bairro: "+ district + "Cidade:" + city + "Rua:" + street + "CPF:" + cpf + "Sexo:" + sexo );
+});
+  
+</script>
+
+<body>
+    <div class="container">
+        <h1>Cadastro</h1>
+
+        <main>
+            <section class ="students">
+                <h2>Aluno</h2>
+
+                <form action="http://localhost:8090/alunos" method="post" class="studentsForm">
+                    <label for="name-students">Nome</label>
+                    <input type="text" id="name-students" name="name">
+
+                    <label for="district">Bairro</label>
+                    <input type="text" id="district" name="bairro">
+
+                    <label for="city">Cidade</label>
+                    <input type="text" id="city" name="cidade">
+                    
+                    <label for="street">Rua</label>
+                    <input type="text" id="street" name="rua">
+
+                    <label for="cpf">CPF</label>
+                    <input type="number" name="cpf" id="cpf">
+
+                    <label for="sexo">Sexo</label>
+                    <input type="text" name="sexo" id="sexo">
+
+                    <button class="botao" type= "submit" onclick="enviarDados()" value="Enviar">Enviar</button>
+                </form>
+            </section>
+
+            <section class ="courses">
+                <h2>Curso</h2>
+
+                <form action="" method="post">
+                    <label for="subject">Disciplina</label>
+                    <input type="text" name="disciplina" id="subject">
+
+                    <label for="totalDuration">Duração total em horas</label>
+                    <input type="number" name="duracaoCurso" id="totalDuration">
+
+                    <button onclick="validateCourses()">Cadastrar</button>
+                </form>
+            </section>
+
+            <section class ="subjects">
+                <h2>Disciplina</h2>
+
+                <form action="" method="post">
+                    <label for="nameSubject">Nome</label>
+                    <input type="text" name="nomeDisciplina" id="nameSubject">
+
+                    <label for="codeSubject">Código</label>
+                    <input type="number" name="codigoDisciplina" id="codeSubject">
+
+                    <label for="contentSubject">Conteúdo programático</label>
+                    <input type="text" name="conteudoProgramatico" id="contentSubject">
+
+                    <label for="numberCredits">Número de cŕeditos</label>
+                    <input type="number" name="numeroCreditos" id="numberCredits">
+
+                    <label for="totalHours">Total de horas</label>
+                    <input type="number" name="totalHoras" id="totalHours">
+
+                    <button onclick="validateSubject().Click">Cadastrar</button>
+							
+                </form>
+            </section>
+        </main>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

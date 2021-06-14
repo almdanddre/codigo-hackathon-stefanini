@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    margin-left: 20rem;
+    width: 100%;
+    margin-top: 10rem;
+}
+
+h1 {
+    display: block;
+    margin-bottom: 4rem;
+    margin-left: 3rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: rgb(8, 8, 8);
+}
+
+h2 {
+    margin-bottom: 2rem;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+section {
+    margin-left: auto;
+    width: 60%;
+    border: 1.5px solid rgba(114, 114, 114, 0);
+    padding: 4rem;
+    margin: 2rem;
+    background: whitesmoke;
+    box-shadow: 0px 0px 1.8px rgba(31, 31, 31, 0.993);
+}
+
+input {
+    margin: 1rem;
+    padding: 0.3rem;
+    border-radius: 4px;
+    border-color: antiquewhite;
+}
+
+input#name-students {
+    width: 100%;
+}
+
+button {
+    background-color: rgb(143, 143, 143);
+    color: aliceblue;
+    border: none;
+    padding: 0.5rem;
+    font-weight: 600;
+}
+
+button:hover {
+    color: rgba(0, 0, 0, 0.685);
+    cursor: pointer;
+}
+
+label {
+    font-weight: 500;
+}
+
+
