@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+    <ui:composition>
+
+        <p:dialog id="UniversityEditDlg" widgetVar="UniversityEditDialog" modal="true" resizable="false" appendTo="@(body)" header="Alterar Universidades">
+            <h:form id="UniversityEditForm">
+                <h:panelGroup id="display">
+                    <p:panelGrid columns="2" rendered="#{universityController.selected != null}">
+                        <p:outputLabel value="Código" for="id" />
+                        <p:inputText id="id" value="#{universityController.selected.id}" title="Código}" required="true" requiredMessage="Código Obrigatório"/>
+                       
+                        <p:outputLabel value="Nome" for="name" />
+                        <p:inputText id="name" value="#{universityController.selected.name}" title="Nome" required="true" requiredMessage="Nome Obrigatório"/>
+                        
+                        <p:outputLabel value="Descrição" for="description" />
+                        <p:inputText id="description" value="#{universityController.selected.description}" title="Descrição" required="true" requiredMessage="Descrição Obrigatório"/>
+                        
+                        <p:outputLabel value="Endereço" for="address" />
+                        <p:inputText id="address" value="#{universityController.selected.address}" title="Endereço" required="true" requiredMessage="Endereço Obrigatório"/>
+                    </p:panelGrid>
+                    <p:commandButton actionListener="#{universityController.update}" value="Salvar" update="display,:UniversityListForm:datalist,:growl" oncomplete="handleSubmit(args, 'UniversityEditDialog');"/>
+                    <p:commandButton value="Cancelar" onclick="UniversityEditDialog.hide()"/>
+                </h:panelGroup>
+            </h:form>
+        </p:dialog>
+
+    </ui:composition>
+</html>

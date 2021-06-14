@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Hackathon SNNE 2021/1</title>
+        <h:outputStylesheet name="css/jsfcrud.css"/>
+    </h:head>
+    <h:body>
+        <font size="2" face="Verdana">
+        <br/> <br/>
+        <b>Olá futuros Stefaniners </b><br/> <br/>
+        Primeiramente gostaríamos de parabeniza-lo por chegar até aqui em nosso Hackthon SNNE 2021/1
+        <br/> 
+        A partir de agora você e seu grupo serão uma SQUAD de Desenvolvimento da Stefanini e precisarão realizar o seguinte desafio:
+        <br/>  <br/>
+        Um Grande cliente da Stefanini da área de Educação solicitou o desenvolvimento de uma aplicação de gestão dos cursos para sua instituição.
+        <br/>
+        O cadastro de Universidade está pronto, porém vocês precisaram desenvolver
+        <br/>- Criar cadastro de alunos: Alunos possuem nome, matrícula, dados pessoais como endereço e cpf, 
+        <br/>- Criar cadastro de cursos: Cursos são compostos por disciplinas e um total de duração em horas conforme a sua grade
+        <br/>- Criar cadastro de disciplinas: Disciplinas possuem nome, código, conteúdo programático, número de créditos e total de horas
+        <br/>- Criar cadastro de turmas: As turmas são compostas por alunos, disciplinas.
+        <br/><br/>
+        Algumas regras como o total de horas de um curso devem ser iguais a soma do total de horas de todas as disciplinas vinculadas a este curso;
+        <br/>
+        O Sistema não deve permitir matricular alunos em disciplinas fora da grade do Curso que ele realiza e validar todas informações cadastradas, como por exemplo: validar o cpf e não aceitar números negativos em campos de horas;
+        <br/><br/>
+        No computador disponibilizado existe um ambiente local de desenvolvimento montado com IDE Netbeans e uma aplicação básica desenvolvida em Java, JSF, Prime Faces, Servidor de aplicação Glassfish e banco de dados Postgres.
+        <br/>
+        Vocês poderão seguir utilizando a arquitetura atual do cliente ou trabalhar em um novo Framework Java de preferência da sua SQUAD.
+        <br/>
+        <br/>Usuário Postgres é: postgres
+        <br/>Senha Postgres é: root
+        <br/>
+        <br/>Usuário Computador é: stefanini
+        <br/>Senha: stefanini@2020
+        <br/><br/>
+        O Arquiteto do projeto sugeriu que as telas/interfaces sejam melhoradas, incluindo menús e isso vocês podem fazer com PrimeFaces, dica: verificar exemplos em https://www.primefaces.org/
+        <br/><br/>
+        Extra
+        <br/>Versionar o código em um git do seu grupo
+        <br/>Versionar os scripts de BD criados para setup dos ambientes de homologação e produção
+        <br /><br /> </font>
+        <b>O acesso remoto será pelo Teamviewer <br/>
+        Não esqueçam de atualizar a planilha de controle de atividades </b> <br/><br/>
+        <h:link outcome="/university/Listar" value="Acesse aqui o Cadastro de Universidades"/>
+    </h:body>
+</html>
+
